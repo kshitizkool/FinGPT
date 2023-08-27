@@ -1,0 +1,6 @@
+OpenAI
+langchain
+google-search-results
+streamlit
+bs4
+yfinance
