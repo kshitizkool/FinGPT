@@ -10,11 +10,16 @@ import yfinance as yf
 
 import openai
 import warnings
-import os
-from secret_key import openapi_key
 warnings.filterwarnings("ignore")
 
-os.environ["OPENAI_API_KEY"] = openapi_key
+
+from secret_key import get_api_key
+openapi_key = get_api_key()
+if openapi_key:
+    # Make API requests or perform other actions using the API key
+    pass
+else:
+    print("API key not set.")
 
 llm = OpenAI(temperature=0,
              model_name="gpt-3.5-turbo-16k-0613")
