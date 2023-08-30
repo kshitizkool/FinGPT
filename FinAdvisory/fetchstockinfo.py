@@ -20,7 +20,8 @@ if openapi_key:
     pass
 else:
     print("API key not set.")
-
+import os
+os.environ['OPENAI_API_KEY']=openapi_key
 llm = OpenAI(temperature=0,
              model_name="gpt-3.5-turbo-16k-0613")
 
