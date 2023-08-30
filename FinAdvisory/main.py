@@ -3,7 +3,7 @@ import helper
 from fetchstockinfo import Anazlyze_stock
 import openai
 st.title("🦜🔗Financial Advisory-GPT")
-st.write("This bot scraps and gathers real time stock related information and analyzes it using LLM and Langchain")
+st.write("This bot scraps and gathers real time stock related information using OpenAI & Yahoo Finance and analyzes it using LLM and Langchain")
 
 query = st.text_input('Input the Company name to be advised')
 
